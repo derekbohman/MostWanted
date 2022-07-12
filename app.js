@@ -346,9 +346,10 @@ function findPersonFamily(person, people) {
   return family;
 }
 
-// function findPersonDescendants(person) {
-//   let descendants = {
-//     "descendants": `${person.firstName} has no descendants`
-//   };
-//   if ()
-// }
+function findPersonDescendants(person, people) {
+  let descendants = people.filter((person) => {
+    if (person.parents === person[])
+      return true;
+  });
+  return descendants;
+}
